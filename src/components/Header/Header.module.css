@@ -1,0 +1,44 @@
+.header {
+  background-color: var(--theme-color);
+   align-items: center; 
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 0 2.5rem;
+  color: var(--font-color);
+  height: 60px;
+}
+.header_logo {
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+  color: #ff9f00;
+}
+.head_title {
+  color: white;
+}
+.header_search {
+  flex: 2;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.inputStyle {
+  background: white;
+  border-radius: 0.5rem;
+  height: 40px;
+width:90%;
+}
+.header_search_icon {
+  background-color: #ff9f00;
+  border-radius: 0.5rem;
+}
+.header_nav {
+  display: flex;
+  flex: 1;
+  gap: 2.5rem;
+  justify-content: flex-end;
+}
+.nav_item {
+  display: flex;
+  flex-direction: column;
+}
