@@ -7,13 +7,13 @@ import BannerImg from "../assests/banner_image.jpg";
 import productData from "../data/products.json";
 import Cauroselproduct from "./Cauroselproduct";
 
+
 // import { HomePageCard, Caurosel, CauroselCategory } from "./";
 
 function HomePage() {
   return (
     <div className="bg-amazonclone-background">
       <div className="min-w-[1000px] max-w-[1500px] m-auto ">
-       
         <Caurosel />
         <div className="grid grid-cols-3 xl:grid-cols-4 -mt-80">
           {productData.map((item, index) => (
@@ -31,7 +31,9 @@ function HomePage() {
         <Cauroselproduct />
         <CauroselCategory />
         <div className="h-[200px]">
-          <img className="h-[100%] m-auto" src={BannerImg} />
+         
+            <img className="h-[100%] m-auto" src={BannerImg} />
+        
         </div>
       </div>
     </div>

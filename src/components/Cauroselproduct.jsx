@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
+import { Link } from "react-router-dom";
 const Cauroselproduct = () => {
   return (
     <div className="bg-white m-3">
@@ -14,7 +14,9 @@ const Cauroselproduct = () => {
       >
         {Array.from({ length: 9 }, (_, i) => (
           <SwiperSlide key={i}>
+             <Link to={`/product/${i}`}>
             <img src={`../images/product_${i}_small.jpg`} />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
