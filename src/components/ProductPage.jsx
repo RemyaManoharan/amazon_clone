@@ -11,7 +11,7 @@ const ProductPage = () => {
   const getProducts = () => {
     CallApi(`data/products.json`).then((productResults) => {
       setProduct(productResults[id]);
-      console.log(productResults);
+     
     });
   };
 
