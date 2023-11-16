@@ -4,23 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-primary: "Inter", sans-serif;
-  --font-color: white;
-  --font-text: black;
-  --theme-color: #0f1111;
-  --nav-color: #232d3f;
+@layer components {
+  .btn {
+    @apply bg-yellow-300 w-full p-3 text-xs xl:text-sm rounded hover:bg-yellow-500 mt-3
+  }
 }
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-.app {
-  font-family: var(--font-primary);
-  max-width: 75vw;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+
